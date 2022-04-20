@@ -1,4 +1,4 @@
-# Nova Translation Editor
+# Nova Translation Editor Fork From (https://github.com/bernhardh/nova-translation-editor)
 
 This is a laravel nova package to manage/edit your translations. It depends on `spatie/laravel-translation-loader`.
 
@@ -24,8 +24,8 @@ First, make sure that you have installed and configured [spatie/laravel-translat
 Install this package with composer and publish the config
 
 ```
-composer require bernhardh/nova-translation-editor
-php artisan vendor:publish --provider="Bernhardh\NovaTranslationEditor\ToolServiceProvider"
+composer require codebuglab/nova-translation-editor
+php artisan vendor:publish --provider="codebuglab\NovaTranslationEditor\ToolServiceProvider"
 ```
 
 Add this nova tool to your NovaServiceProvider (`app/Providers/NovaServiceProvider.php`):
@@ -35,7 +35,7 @@ public function tools()
 {
     return [
         ...
-        new \Bernhardh\NovaTranslationEditor\NovaTranslationEditor()
+        new \codebuglab\NovaTranslationEditor\NovaTranslationEditor()
     ];
 }
 ```
